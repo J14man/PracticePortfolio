@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>About</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-link-wrapper">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="brand">
+                        <div> Jacob Kenneally</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-wrapper">
+                <div class="two-column-wrapper">
+                    <div class="profile-image-wrapper">
+                        <img src="images/fog.jpg">
+
+                    </div>
+
+                    <div class="profile-content-wrapper">
+                        <div class="formClass">
+                            
+                            <form action="{{ url_for('hello') }}" method="post">
+                                <input type="text" name="name" placeholder="first name">
+                                <button>Submit</button>
+                            </form>
+                        
+                        </div>
+                        <h1> My name is Jacob Kenneally, hello.</h1>
+                        <p> Welcome to my site.</p>
+                    </div>
+                </div>
+                
+
+            </div>
+
+
+
+        </div>
+    </body>
+    
+</html>
